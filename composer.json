@@ -1,5 +1,5 @@
 {
-    "name": "sparkphp/project",
+    "name": "geekish/spark-skeleton",
     "description": "A sample project for building an application using Spark.",
     "type": "project",
     "license": "MIT",
@@ -8,13 +8,17 @@
     },
     "autoload": {
         "psr-4": {
-            "Spark\\Project\\": "src/"
+            "Spark\\Skeleton\\": "src/"
         }
     },
     "authors": [
         {
             "name": "Daniel Olfelt",
             "email": "dolfelt@gmail.com"
+        },
+        {
+            "name": "Hannah Warmbier",
+            "email": "hannahwarmbier@gmail.com"
         }
     ]
 }

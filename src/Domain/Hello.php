@@ -1,6 +1,6 @@
 <?php
 
-namespace Spark\Project\Domain;
+namespace Spark\Skeleton\Domain;
 
 use Spark\Adr\DomainInterface;
 use Spark\Adr\PayloadInterface;
