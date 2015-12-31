@@ -34,7 +34,8 @@ class Hello implements DomainInterface
         return $this->payload
             ->withStatus(PayloadInterface::OK)
             ->withOutput([
-                'hello' => $name,
+                'name' => ucfirst($name),
+                'template' => 'hello'
             ]);
     }
 }
