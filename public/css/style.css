@@ -1,0 +1,20 @@
+@import "//fonts.googleapis.com/css?family=Roboto:400|500";
+
+body {
+    color: #555;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 75px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    color: #3c689f;
+    letter-spacing: -0.5px;
+    line-height: 1;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0;
+}

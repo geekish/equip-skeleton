@@ -25,16 +25,13 @@ class Hello implements DomainInterface
      */
     public function __invoke(array $input)
     {
-        $name = 'world';
-
-        if (!empty($input['name'])) {
-            $name = $input['name'];
-        }
+        $name = !empty($input['name']) ? $input['name'] : 'world';
 
         return $this->payload
             ->withStatus(PayloadInterface::OK)
             ->withOutput([
-                'hello' => $name,
+                'name' => ucfirst($name),
+                'template' => 'hello'
             ]);
     }
 }

@@ -4,7 +4,8 @@
     "type": "project",
     "license": "MIT",
     "require": {
-        "sparkphp/spark": "~0.16.0"
+        "sparkphp/spark": "~0.16.0",
+        "league/plates": "^3.1"
     },
     "autoload": {
         "psr-4": {
