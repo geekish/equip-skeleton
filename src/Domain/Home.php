@@ -1,9 +1,9 @@
 <?php
 
-namespace Spark\Skeleton\Domain;
+namespace Equip\Skeleton\Domain;
 
-use Spark\Adr\DomainInterface;
-use Spark\Adr\PayloadInterface;
+use Equip\Adr\DomainInterface;
+use Equip\Adr\PayloadInterface;
 
 class Home implements DomainInterface
 {

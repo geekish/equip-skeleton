@@ -1,6 +1,6 @@
 <?php
 
-use Spark\Configuration;
+use Equip\Configuration;
 
 return [
     Configuration\AurynConfiguration::class,

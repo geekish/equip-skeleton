@@ -1,7 +1,7 @@
 <?php
 
-use Spark\Directory;
-use Spark\Skeleton\Domain;
+use Equip\Directory;
+use Equip\Skeleton\Domain;
 
 return function (Directory $dir) {
     return $dir

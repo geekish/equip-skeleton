@@ -1,7 +1,7 @@
 <?php
 
 use Auryn\Injector;
-use Spark\Application;
+use Equip\Application;
 
 Application::build(require __DIR__ . '/di.php')
     ->setConfiguration(require __DIR__ . '/config.php')

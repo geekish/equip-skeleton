@@ -1,7 +1,7 @@
 <?php
 
 use Relay\Middleware;
-use Spark\Handler;
+use Equip\Handler;
 
 return [
     Middleware\ResponseSender::class,
