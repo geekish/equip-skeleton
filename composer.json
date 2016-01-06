@@ -1,15 +1,15 @@
 {
-    "name": "geekish/spark-skeleton",
-    "description": "A sample project for building an application using Spark.",
+    "name": "geekish/equip-skeleton",
+    "description": "A sample project for building an application using Equip.",
     "type": "project",
     "license": "MIT",
     "require": {
-        "sparkphp/spark": "~0.16.0",
+        "equip/framework": "^1.0",
         "league/plates": "^3.1"
     },
     "autoload": {
         "psr-4": {
-            "Spark\\Skeleton\\": "src/"
+            "Equip\\Skeleton\\": "src/"
         }
     },
     "authors": [
@@ -21,5 +21,7 @@
             "name": "Hannah Warmbier",
             "email": "hannahwarmbier@gmail.com"
         }
-    ]
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
