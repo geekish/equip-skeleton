@@ -1,22 +1,18 @@
 <?php
 
 use Auryn\Injector;
-use League\Plates\Engine;
-use League\Plates\Extension\Asset;
+use josegonzalez\Dotenv\Loader;
 
 $di = new Injector;
 
-$di->define(Engine::class, [
-    ':directory' => __DIR__ . '/templates'
-]);
-
-$di->define(Asset::class, [
-    ':path' => dirname(__DIR__) . '/public'
-]);
-
-$di->prepare(Engine::class, function (Engine $engine, $di) {
-    $engine->loadExtension($di->make(Asset::class));
-    return $engine;
+$di->prepare(Loader::class, function (Loader $loader, $di) {
+    $loader->setFilters([function ($data) {
+            foreach($data as $key => $value) {
+                $data[$key] = str_replace('__ROOT__', dirname(__DIR__), $value);
+            }
+            return $data;
+        }]);
+    return $loader;
 });
 
 return $di;
